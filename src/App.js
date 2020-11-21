@@ -1,16 +1,15 @@
 import { HOME } from "./routes/routes";
-import { Home } from "./pages/home";
+import Home from "./pages/home";
 import "./App.css";
-import { NavBar } from "./components/Navbar";
+import Navbar from "./components/Navbar";
 import React from "react";
-import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
-const  App = () => {
+const App = () => {
   return (
-    <Router>
-        <NavBar />
+     <Router>
+      <Navbar />
       <div className={"container"}>
         <div className="main">
           <Switch>
@@ -18,7 +17,8 @@ const  App = () => {
           </Switch>
         </div>
       </div>
-    </Router>
+    </Router> 
+    
   );
 }
 
