@@ -4,11 +4,11 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { World } from "./components/World";
 
 const App = () => {
   return (
-     <Router>
+
+    <Router>
       <Navbar />
       <div className={"container"}>
         <div className="main">
@@ -17,8 +17,8 @@ const App = () => {
           </Switch>
         </div>
       </div>
-    </Router> 
-    
+    </Router>
+
   );
 }
 

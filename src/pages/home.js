@@ -2,6 +2,7 @@ import React, { PureComponent, useEffect, useState } from 'react';
 import {
     BarChart, Bar, Area, AreaChart, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, LineChart, Line
 } from 'recharts';
+import { World } from "../components/World";
 import { getData } from '../helpers/getData'
 import countries from '../utils/countries.json'
 
@@ -14,7 +15,6 @@ const Home = () => {
     useEffect(() => {
         getData(pais, setData)
     }, [pais])
-
 
     useEffect(() => {
         const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -60,10 +60,10 @@ const Home = () => {
         setPais(event.target.value)
     }
 
-    if(groupedMonth !== undefined){
-        console.log(groupedMonth[11]+'hola')
+    if (groupedMonth !== undefined) {
+        console.log(groupedMonth[11] + 'hola')
     }
-    
+
     return (
         <>
             {/* Grafico mudial para usar de fondo. */}
@@ -99,6 +99,7 @@ const Home = () => {
                     top: 10, right: 30, left: 0, bottom: 0,
                 }}
             >
+
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="month" />
                 <YAxis />
