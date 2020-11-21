@@ -16,8 +16,7 @@ export const World = () => {
 
     return (
         <div>
-            <h1>{dataWorld.location}</h1>
-            <p>{dataWorld.population}</p>
+
         </div>
     )
 }
